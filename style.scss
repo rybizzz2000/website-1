@@ -1,0 +1,371 @@
+$bodycolor : #151129;
+$textcolor : white;
+$lightgreytextcolor: lightgray;
+$greytextcolor:grey;
+$containerformcolor: #27164a;
+
+@mixin Header{
+    color: #ffffff;
+    font-size: 180px;
+    font-family: Didot;
+}
+
+@mixin HouseText{
+  content: '';
+  width: 4px;
+  height: 40px;
+  display: block;
+  position: relative;
+  top: -40px;
+  right: 20px;
+}
+
+@mixin containerforms{
+  width: 90%;
+  height: 73.9vh;
+  margin-left: 5%;
+  background-color: $containerformcolor;
+  margin-top: 4%;
+  z-index: 60;
+  position: relative;
+  border-radius: 15px;
+}
+
+@mixin footerfonts{
+  color: $greytextcolor;
+  font-size: 130%;
+}
+
+body{
+  background-color: $bodycolor;
+  margin: 0;
+  padding: 0;
+  height: 50vh;
+}
+
+nav{
+  ul{
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    margin-right: 1.5%;
+    margin-top: -3.5%; 
+  }
+  li{
+    display: inline; 
+  }
+  a{
+    color: $textcolor;
+    margin-right: 1%; 
+    text-decoration: none;
+    font-size: 150%;
+    font-family: arial;
+    padding: 0.3%;
+  }
+}
+
+h1{
+  @include Header();
+  padding: 4%;
+  margin-top: 4%;
+}
+
+.logo{
+  width: 8%;
+  margin: 1%;
+  margin-top: 1.5%;
+}
+
+@import "buttons", "contactbtn", "infobtn", "submitbtn", "btn", "formspic", "footer", "claimbtn";
+
+p{
+  color: $textcolor;
+  padding: 4%;
+  font-size: 185%;
+  margin-top: -10%;
+  font-family: Arial;
+  flex-wrap: wrap;
+}
+
+.p1{
+  font-size: 125%;
+  font-family: Arial;
+
+}
+
+.p2{
+  font-size: 210%;
+  margin-top: -10.5%;
+  font-family: Arial;
+}
+
+.image1{
+  float: right;
+  margin: -48%;
+  padding-right: 50%;
+  width:43%;
+  margin-top: -1250px;
+}
+
+.btn12{
+  margin-top: -55px;
+  display: flex;
+}
+
+.image2{
+  width: 98%;
+  margin-left: 0.9%;
+  margin-right: 0.9%;
+  margin-top: 10%;
+  border-radius: 15px;
+}
+
+.p3{
+  text-align: center;
+  margin: -60%;
+  font-size: 87px;
+  font-family: arial;
+}
+
+.image3{
+  margin-top: 89%;
+  margin-left: 4%;
+  width: 40%;
+}
+
+h2{
+  @include Header();
+  font-size: 140px;
+  margin-top: -40%;
+  margin-left: 55%;
+}
+
+.paragraph1{
+  .pa1{
+    font-size: 240%;
+    font-family: arial;
+    margin-top: -10%;
+    margin-left: 51.5%;
+    color: grey;
+    position: relative;
+  }
+  ::after{
+    background-color: $greytextcolor;
+    @include HouseText();
+  }
+}
+
+.paragraph1{ 
+.pa2{
+  color: $textcolor;
+  font-size: 240%;
+  font-family: arial;
+  margin-top: -10%;
+  margin-left: 51.5%;
+  position: relative;
+  }.pa2::after{
+  background-color: #8259f0;
+  @include HouseText();
+  }
+}
+
+.paragraph1{
+  .pa3{
+    font-size: 240%;
+    font-family: arial;
+    margin-top: -10%;
+    margin-left: 51.5%;
+    color: grey;
+    position: relative;
+  }
+  ::after{
+    background-color: $greytextcolor;
+    @include HouseText();
+  }
+}
+
+.paragraph1{
+  .pa4{
+    font-size: 240%;
+    font-family: arial;
+    margin-top: -10%;
+    margin-left: 51.5%;
+    color: grey;
+    position: relative;
+  }
+  ::after{
+    background-color: $greytextcolor;
+    @include HouseText();
+  }
+}
+
+.p4{
+  font-size: 120%;
+  font-family: arial;
+  margin-top: -9.5%;
+  margin-left: 51.5%;
+  color: $greytextcolor;
+}
+
+h3{
+  font-size: 340%;
+  text-align: center;
+  color: $textcolor;
+  margin-top: 15%;
+  
+}
+  
+.container{
+ @include containerforms();
+}form{
+  margin-top: -3%;
+}
+
+.pf{
+  margin-left: 0.5%;
+  margin-top: -40%;
+  font-size: 20px;
+}
+
+.form-control{
+  width: 35%;
+  padding: -1% 0%;
+  margin: 1% 4.3%;
+  border: 0;
+  border-radius: 4px;
+  input{  
+  position: relative;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px $greytextcolor solid;
+  padding: 3%  0%;
+  padding-right: 60%;
+  color: $textcolor;
+  font-size: 100%;
+ }
+ ::placeholder{
+  color:  $lightgreytextcolor;
+  font-size: 130%;
+ }
+}
+
+.checkbox1{
+  margin-left: 4%;
+  margin-top: 2%;
+}
+
+
+label{
+  font-size: 24px;
+  cursor: pointer;
+  color: $lightgreytextcolor;
+}
+
+input[type="checkbox"]{
+  width: 24px;
+  height: 23px;
+  cursor: pointer;
+  background-color: $containerformcolor;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid $greytextcolor;
+  margin-bottom: -4px;
+  text-align: center;
+  outline: none;
+}
+
+input[type="checkbox"]::after{
+  font-family: "font Awesome 6 free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 18px;
+  color: white;
+  display: none;
+}
+
+input[type="checkbox"]:hover{
+  background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked{
+  background-color: $bodycolor;
+}
+
+input[type="checkbox"]:checked:after{
+display: block;
+}
+
+
+label{
+  font-size: 24px;
+  cursor: pointer;
+  color: $lightgreytextcolor;
+}
+
+.container1{
+  background-color: $textcolor;
+  margin-top: -400px;
+  height: 50vh;
+}
+
+
+.justlogo{
+  margin-left: -65px;
+  width: 70px;
+}
+
+.col1{
+  flex-basis: 25%;
+  padding: 10px;
+  list-style: none;
+  font-size: 35px;
+}
+
+.col1 a{
+  text-decoration: none;
+  color: $textcolor;
+}
+
+.footerh3{
+  margin-left: -330px;
+  margin-top: -10px;
+}
+
+.trustpilot-logo{
+  margin-right: 50px;
+  width: 150px;
+}
+
+hr{
+  width: 95%;
+  margin-top: 400px;
+}
+
+.copyright{
+  margin-left: -40px;
+  margin-top: -90px;
+  @include footerfonts();
+}
+
+.ptc{
+  float: right; 
+  margin-top: -280px;
+  margin-right: -40px;
+  @include footerfonts();
+}
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+

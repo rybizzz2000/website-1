@@ -1,0 +1,28 @@
+.infobtn{
+  border: none;
+  color: $textcolor;
+  padding: 35px 110px;
+  text-align: center;
+  font-size: 130%;
+  margin: 0px 100px;
+  cursor: pointer;
+  margin-left: 55.9%;
+  margin-top: -65px;
+  border-radius: 15px;
+  background-color: #151129;
+  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(130,89,240);
+}
+.infobtn::after{
+  content: '';
+  position: absolute;
+  height: 102.1%;
+  width: 100.3%;
+  border-radius: 15px;
+  background-image: linear-gradient(to top right, #8259f0,#ffffff, #ffffff );
+  z-index: -1;
+}

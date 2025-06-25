@@ -1,0 +1,24 @@
+.submitbtn{
+  padding: 25px 60px;
+  margin: 60px 90px;
+  cursor: pointer;
+  color: $textcolor;
+  background-color: $containerformcolor;
+  font-size: 130%;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0 0 8px rgba(130,89,240);
+}
+.submitbtn::after{
+  content: '';
+  position: absolute;
+  height: 103%;
+  width: 101%;
+  border-radius: 15px;
+  background-image: linear-gradient(to top right, #8259f0,#ffffff, #ffffff );
+  z-index: -1;
+}
